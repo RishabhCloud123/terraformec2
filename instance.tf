@@ -7,4 +7,5 @@ provider "aws" {
 resource "aws_instance" "terraformec2" {
   ami  = "ami-0321c04d7f279eb63"
   instance_type = "t2.micro"
+  encrypted         = true
 }
